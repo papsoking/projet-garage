@@ -1,10 +1,8 @@
 #!/bin/sh
 set -e
 
-# Génère la clé d'application si elle n'est pas déjà définie (via les variables d'env de Render)
-if [ -z "$APP_KEY" ]; then
-  php artisan key:generate --force
-fi
+# APP_KEY est fourni directement via les variables d'environnement Render
+# (pas de fichier .env en production, donc pas de "php artisan key:generate" ici).
 
 # Met en cache la config et les routes (performance)
 php artisan config:cache
