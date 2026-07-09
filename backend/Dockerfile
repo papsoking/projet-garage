@@ -4,7 +4,7 @@ FROM php:8.4-apache
 
 # Extensions PHP nécessaires à Laravel + PostgreSQL
 RUN apt-get update && apt-get install -y \
-        git unzip libpq-dev libzip-dev libonig-dev \
+        git unzip libpq-dev libzip-dev libonig-dev libsqlite3-dev \
     && docker-php-ext-install pdo pdo_pgsql pdo_sqlite mbstring zip \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
