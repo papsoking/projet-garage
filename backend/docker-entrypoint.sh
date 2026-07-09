@@ -11,4 +11,7 @@ php artisan route:cache
 # Applique les migrations sur la base de données de production (Postgres fourni par Render)
 php artisan migrate --force
 
+# Peuple la base si elle est vide (sans danger si déjà peuplée, voir DatabaseSeeder.php)
+php artisan db:seed --force
+
 exec "$@"
