@@ -1,0 +1,122 @@
+/* ============================================================
+   Mini Garage — Thème visuel
+   Ce fichier définit les classes personnalisées utilisées dans
+   les composants (garage-navbar, garage-brand, content-card,
+   custom-hover-box) qui n'étaient stylées nulle part jusqu'ici.
+   Palette reprise du dossier de conception visuelle du projet.
+   ============================================================ */
+
+:root {
+  --garage-navy: #1e3a5f;
+  --garage-navy-dark: #16293f;
+  --garage-accent: #f5a623;
+  --garage-accent-dark: #c46b1f;
+  --garage-bg: #f5f7fa;
+  --garage-card-border: #e6e9ee;
+  --garage-shadow: 0 2px 10px rgba(30, 58, 95, 0.08);
+  --garage-shadow-hover: 0 8px 20px rgba(30, 58, 95, 0.15);
+}
+
+body {
+  background: var(--garage-bg);
+}
+
+/* ---------- Barre de navigation ---------- */
+.garage-navbar {
+  background: linear-gradient(90deg, var(--garage-navy) 0%, var(--garage-navy-dark) 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.garage-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fff !important;
+}
+
+.garage-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.garage-navbar .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.garage-navbar .nav-link.active {
+  color: var(--garage-navy);
+  background-color: var(--garage-accent);
+}
+
+/* ---------- Titres de page ---------- */
+.page-title {
+  font-weight: 700;
+  color: var(--garage-navy);
+}
+
+.page-lead {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+/* ---------- Cartes de contenu ---------- */
+.content-card {
+  background: #fff;
+  border: 1px solid var(--garage-card-border);
+  border-radius: 14px;
+  box-shadow: var(--garage-shadow);
+}
+
+/* ---------- Cartes/boîtes cliquables avec effet de survol ---------- */
+.custom-hover-box {
+  background: #fff;
+  border-radius: 14px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.custom-hover-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--garage-shadow-hover);
+  border-color: var(--garage-accent);
+  color: inherit;
+}
+
+/* ---------- Boutons d'accent (actions principales) ---------- */
+.btn-primary {
+  background-color: var(--garage-accent);
+  border-color: var(--garage-accent);
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--garage-accent-dark);
+  border-color: var(--garage-accent-dark);
+  color: #fff;
+}
+
+/* ---------- Badges ---------- */
+.text-bg-primary {
+  background-color: var(--garage-accent) !important;
+  color: #1a1a1a !important;
+}
+
+/* ---------- Tableaux dans les cartes ---------- */
+.content-card table {
+  margin-bottom: 0;
+}
+
+.content-card thead th {
+  background-color: var(--garage-bg);
+  color: var(--garage-navy);
+  border-bottom: 2px solid var(--garage-card-border);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
