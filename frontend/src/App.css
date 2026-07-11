@@ -1,5 +1,5 @@
 /* ============================================================
-   Mini Garage — Thème visuel
+   Mini Garage - Thème visuel
    Ce fichier définit les classes personnalisées utilisées dans
    les composants (garage-navbar, garage-brand, content-card,
    custom-hover-box) qui n'étaient stylées nulle part jusqu'ici.
@@ -23,7 +23,11 @@ body {
 
 /* ---------- Barre de navigation ---------- */
 .garage-navbar {
-  background: linear-gradient(90deg, var(--garage-navy) 0%, var(--garage-navy-dark) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--garage-navy) 0%,
+    var(--garage-navy-dark) 100%
+  );
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -37,7 +41,9 @@ body {
   color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
   border-radius: 999px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .garage-navbar .nav-link:hover {
@@ -73,7 +79,10 @@ body {
 .custom-hover-box {
   background: #fff;
   border-radius: 14px;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
   text-decoration: none;
   color: inherit;
   display: block;
