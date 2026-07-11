@@ -15,6 +15,15 @@ export default function ReparationForm() {
     objet_reparation: "",
     techniciens: [],
   });
+  console.log("formData", formData);
+  // Convertit une date backend en valeur compatible avec <input type="date">
+  const formatDateForInput = (dateString) => {
+    if (!dateString) {
+      return "";
+    }
+
+    return dateString.split("T")[0].split(" ")[0];
+  };
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -74,7 +83,7 @@ export default function ReparationForm() {
         .then((data) => {
           setFormData({
             vehicule_id: data.vehicule_id,
-            date: data.date,
+            date: formatDateForInput(data.date),
             duree_main_oeuvre: data.duree_main_oeuvre,
             objet_reparation: data.objet_reparation,
             techniciens: data.techniciens.map((t) => t.id),

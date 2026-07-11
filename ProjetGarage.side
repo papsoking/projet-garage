@@ -1,0 +1,1554 @@
+{
+  "id": "51adfca3-7449-4bc5-a935-2b7d45a7e58a",
+  "version": "2.0",
+  "name": "ProjetGarage",
+  "url": "http://localhost:5173/",
+  "tests": [{
+    "id": "5144b23f-3732-4641-a2ba-0f3b15402604",
+    "name": "Test Garage Frontend",
+    "commands": [{
+      "id": "c018d765-1a3f-4f60-a5b3-ee5d05dc018f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1964d924-245b-4956-9a5b-aa103371e257",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e9f55f9-2f02-4482-91b1-272b8eebd0cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Véhicules",
+      "targets": [
+        ["linkText=Véhicules", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Véhicules')]", "xpath:link"],
+        ["xpath=//div[@id='garageNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicules')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40711242-7272-470c-b0de-3d03f7631a3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "391d94e0-1a40-4ec0-87cd-556b00dfea43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3",
+      "targets": [
+        ["css=.mb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7137e3f4-a773-4671-91dd-b4683aa237ce",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,260.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14adba13-87a3-459e-a72a-439e67a6a62c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-warning",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-warning", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[4]/table/tbody/tr[27]/td[4]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicules/edit/30')]", "xpath:href"],
+        ["xpath=//tr[27]/td[4]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53e79d84-829f-4124-b59f-8d7a2fadc4dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4021c0d-ea3d-48dc-a857-8c4525cef7ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fg-5157-lk"
+    }, {
+      "id": "ca065cc7-d119-46fb-90a3-77d467590424",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-garage",
+      "targets": [
+        ["css=.btn-garage", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Modifier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6986bf8-27ae-43d5-aa6a-0af816fa8037",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7461cdbd-f631-4a64-b2cc-c72a9c8e9090",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2617991-77d4-4aca-bac9-5854eddd7331",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-danger",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[5]/table/tbody/tr[27]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//tr[27]/td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0888f6e7-d23d-44dc-a352-6e47def5ba48",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Supprimer ce véhicule ?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c742f78-b820-4a83-8916-97364dd55a58",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d1191a3-5137-49a2-b8c2-eaad3ed70d3d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ajouter un véhicule",
+      "targets": [
+        ["linkText=Ajouter un véhicule", "linkText"],
+        ["css=.btn-garage", "css:finder"],
+        ["xpath=//a[contains(text(),'Ajouter un véhicule')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicules/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ajouter un véhicule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38d2a581-58c5-46ac-bde5-53f877cf6056",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fa7d999-0fc1-475c-bd8a-987444631316",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fg-5157-lk"
+    }, {
+      "id": "8ed08c41-2e8a-4608-947c-dc4883d9a0b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Toyota"
+    }, {
+      "id": "c01420ac-a4e0-4ecd-8cb1-98a7fd764350",
+      "comment": "",
+      "command": "type",
+      "target": "name=modele",
+      "targets": [
+        ["name=modele", "name"],
+        ["css=.col-md-6:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='modele']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "dxv4f"
+    }, {
+      "id": "8c935322-1261-4335-946b-404839bfe414",
+      "comment": "",
+      "command": "type",
+      "target": "name=couleur",
+      "targets": [
+        ["name=couleur", "name"],
+        ["css=.col-md-6:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='couleur']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Orange"
+    }, {
+      "id": "f861fb33-1edf-42f7-999a-984cbd220acd",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2015"
+    }, {
+      "id": "3767b305-5e31-4d4c-ac75-02e6e0274131",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "120000"
+    }, {
+      "id": "c0e6a79f-c07e-4750-9b0a-cd6fa361ef9d",
+      "comment": "",
+      "command": "type",
+      "target": "name=carrosserie",
+      "targets": [
+        ["name=carrosserie", "name"],
+        ["css=.col-md-6:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='carrosserie']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Beige"
+    }, {
+      "id": "6e3dc24c-1173-4d84-8ec6-b249ebdf8b10",
+      "comment": "",
+      "command": "type",
+      "target": "name=energie",
+      "targets": [
+        ["name=energie", "name"],
+        ["css=.col-md-6:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='energie']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "Essence"
+    }, {
+      "id": "d14641b6-22f9-4ea7-b086-398078635c39",
+      "comment": "",
+      "command": "type",
+      "target": "name=boite",
+      "targets": [
+        ["name=boite", "name"],
+        ["css=.col-md-6:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//input[@name='boite']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "Automatique"
+    }, {
+      "id": "f4d457d2-6934-4fed-8e59-3be92d14bd3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-garage",
+      "targets": [
+        ["css=.btn-garage", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enregistrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4a0ff9e-a21c-4f47-8e53-991343473ab2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e9941000-0fb0-4adf-904d-b4d7e617d6bf",
+    "name": "Backend test",
+    "commands": [{
+      "id": "af488917-a022-477c-bc54-203997d0ed65",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/vehicules",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1031b32e-8abd-49d9-8124-a385d28bb56c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0935860d-6eca-4358-884f-1172c8e1b8ec",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,439.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fee0264f-9ac5-4ede-9037-fff033ece51d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ajouter un véhicule",
+      "targets": [
+        ["linkText=Ajouter un véhicule", "linkText"],
+        ["css=.btn-garage", "css:finder"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules/create']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ajouter un véhicule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d2ccb0-f866-489a-a4f6-261f4febbb59",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d93b07eb-49e3-4c0f-88a5-42cfc1c05510",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7ff1c1-421b-45e6-8453-0a28d67213f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6cb25a-c092-4bdd-b12f-c9bf88c4f008",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71cbcf3d-4446-4bce-93f5-91b37340bb18",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "694dbc2c-2d75-41f4-b8b4-224e500fd05c",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ey-0128-td"
+    }, {
+      "id": "6ef858c7-5e32-41da-9d32-d0e1f3a0b889",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d3f4182-f954-4644-923c-ee1651c9c0b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.mb-2:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Toyota"
+    }, {
+      "id": "952639fd-4a9d-49a7-936b-e34ae23de188",
+      "comment": "",
+      "command": "type",
+      "target": "name=modele",
+      "targets": [
+        ["name=modele", "name"],
+        ["css=.mb-2:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='modele']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "dxv4f"
+    }, {
+      "id": "ee181335-9c80-489b-a6bf-60a7cac3bcdf",
+      "comment": "",
+      "command": "type",
+      "target": "name=couleur",
+      "targets": [
+        ["name=couleur", "name"],
+        ["css=.mb-2:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='couleur']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Orange"
+    }, {
+      "id": "77df2b2f-f95f-4f8a-a197-507c669b45c5",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2010"
+    }, {
+      "id": "14d0ddc5-84fc-4237-9ff6-121a8b8babff",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "120500"
+    }, {
+      "id": "f558af44-e334-4013-a799-8bbdddd5f98f",
+      "comment": "",
+      "command": "type",
+      "target": "name=carrosserie",
+      "targets": [
+        ["name=carrosserie", "name"],
+        ["css=.mb-2:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='carrosserie']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Beige"
+    }, {
+      "id": "89fb6554-0860-4300-93c0-53fd7c9ef492",
+      "comment": "",
+      "command": "type",
+      "target": "name=energie",
+      "targets": [
+        ["name=energie", "name"],
+        ["css=.mb-2:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//input[@name='energie']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "Diesel"
+    }, {
+      "id": "ed13d63e-69a5-429b-b879-516d9fcee912",
+      "comment": "",
+      "command": "type",
+      "target": "name=boite",
+      "targets": [
+        ["name=boite", "name"],
+        ["css=.mb-2:nth-child(10) > .form-control", "css:finder"],
+        ["xpath=//input[@name='boite']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "Automatique"
+    }, {
+      "id": "64425a04-8e0e-40c8-8ea8-d94531ee0fa0",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.mb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "ey-0128-tx"
+    }, {
+      "id": "cfcd33ad-3321-488c-9c0f-8771902b214d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enregistrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1de37267-7e4b-4164-beb3-3c2ff63caeb2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,977.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adbb7f41-6dd1-425d-82b3-cf4de9533730",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-warning",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-warning", "css:finder"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules/35/edit']", "xpath:href"],
+        ["xpath=//tr[27]/td[4]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d40201e-6a83-40a0-a4f8-57c827c659c2",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "33.80000305175781,18.399993896484375"
+    }, {
+      "id": "d484c857-cf54-4154-babd-1aef7233b1a1",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "33.80000305175781,18.399993896484375"
+    }, {
+      "id": "dd664395-f2bf-4fbd-add3-6d75275e0d0f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "33.80000305175781,18.399993896484375"
+    }, {
+      "id": "365c2069-5342-4987-89a5-1c4e1242ca94",
+      "comment": "",
+      "command": "click",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "660664b2-9b3e-4380-9006-ac19189f305c",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.mb-2:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2020"
+    }, {
+      "id": "dcd6f2af-111f-4ddd-a989-3fa5318e0d00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enregistrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b25fbd5-5d29-466a-ad15-5df8d373af58",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1180)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3a60165-208d-45b9-9244-4b3783adb340",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-info > .bi",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-info > .bi", "css:finder"],
+        ["xpath=//tr[27]/td[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d09a17f-d387-4595-8e4e-9d58fbf61df5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Véhicules",
+      "targets": [
+        ["linkText=Véhicules", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Véhicules')]", "xpath:link"],
+        ["xpath=//div[@id='garageNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6964e4a-c034-471a-8d7b-244853ed6e48",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Véhicules",
+      "targets": [
+        ["linkText=Véhicules", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Véhicules')]", "xpath:link"],
+        ["xpath=//div[@id='garageNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a15ae2e3-a193-4423-a10d-5fb6865a8e07",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Véhicules",
+      "targets": [
+        ["linkText=Véhicules", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Véhicules')]", "xpath:link"],
+        ["xpath=//div[@id='garageNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b29110c1-fccb-49c2-8ec7-d6891e22edb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Véhicules",
+      "targets": [
+        ["linkText=Véhicules", "linkText"],
+        ["css=.active", "css:finder"],
+        ["xpath=//a[contains(text(),'Véhicules')]", "xpath:link"],
+        ["xpath=//div[@id='garageNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95dcfa6c-0c53-4486-ae00-32bde7959699",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,784.7999877929688)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd46ddd9-8a40-4fa2-b89a-003f6afed6f5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(27) .btn-outline-warning",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-warning", "css:finder"],
+        ["xpath=//a[@href='http://localhost:8000/vehicules/35/edit']", "xpath:href"],
+        ["xpath=//tr[27]/td[4]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bfaeb6a-88e9-4165-8f1f-272a80be8acd",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbda5394-3c6f-446a-93c9-16412733dc25",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .d-inline > .btn",
+      "targets": [
+        ["css=tr:nth-child(27) .d-inline > .btn", "css:finder"],
+        ["xpath=(//button[@onclick=\"return confirm('Supprimer ce véhicule ?')\"])[27]", "xpath:attributes"],
+        ["xpath=//tr[27]/td[4]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a6de9be-a36f-437b-ab55-63907106bb01",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Supprimer ce véhicule ?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2e5926-2216-4423-a149-eea9165ee3c8",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a66d11d1-eee3-43b4-adbc-e87a02e4e604",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1132)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "48856e87-9332-4d7b-9cdf-9784d2fc2594",
+    "name": "Test Frontend",
+    "commands": [{
+      "id": "2ffd3390-a78c-4781-8bc4-2be1dd39750e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5173/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de4e2add-56a6-4c50-bf3a-2d5d492aa413",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "668b734a-c75e-4ec8-bcd7-581bf42dc45b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='garageNav']/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Déconnexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2f93eb2-9464-4678-a11a-02cc49fe30e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='garageNav']/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Déconnexion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39642a2f-0d9b-4c78-af14-240dc634572e",
+      "comment": "",
+      "command": "click",
+      "target": "id=root",
+      "targets": [
+        ["id=root", "id"],
+        ["css=#root", "css:finder"],
+        ["xpath=//div[@id='root']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6d1a4fa-985c-48f8-ab49-a932d047a8e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@minigarage.com"
+    }, {
+      "id": "4d57ced1-f104-419c-b71c-cef29a73ed83",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin1234"
+    }, {
+      "id": "aafb190e-5f37-4cac-9fc1-53ce95775e74",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02750892-4311-4c4f-96f1-4b3aa4ac739d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex",
+      "targets": [
+        ["css=.d-flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e801f8-6ffa-4181-b621-43d5af1f0097",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6788fde-64c5-4c0e-8425-88685f5c0a04",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123n"
+    }, {
+      "id": "34282d11-3cbf-4320-b18c-0d328b30238f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "292e2fb5-3a22-4cdf-8641-2eca4c67f183",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content-card",
+      "targets": [
+        ["css=.content-card", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50b72b3a-46e1-41b7-a9b9-013c7286bca2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234admin"
+    }, {
+      "id": "b1976ef3-2b02-44e6-9b8d-019c89b3b1b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2612fa7-6aaf-4204-8761-1c50113a1cf9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd48b4ce-07fd-4807-89a0-337d1d9cbe37",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "937bd202-459a-4fe9-b448-15726e085882",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcabdf8e-5cc9-4430-8861-b6ba7e194718",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbc13be-9302-4860-ace5-f75918106622",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin1234"
+    }, {
+      "id": "bd231c0c-5dc9-48f1-b1ae-a34b3340482f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86cb0fc9-a14a-46a3-b97a-955f71c74e16",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5061804-d2a8-4e61-900a-8585ea9aa5fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-hover-box:nth-child(1) > p",
+      "targets": [
+        ["css=.custom-hover-box:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/a/p", "xpath:idRelative"],
+        ["xpath=//a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Gestion des véhicules')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6778e9cc-a011-43f2-b37d-749ce5b02f47",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ajouter un véhicule",
+      "targets": [
+        ["linkText=Ajouter un véhicule", "linkText"],
+        ["css=.px-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Ajouter un véhicule')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/vehicules/create')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ajouter un véhicule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d750b3-67de-459e-9cd9-9809d25f78d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58095721-14a1-41e2-9b8d-010319ca8143",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pk-3954-vi"
+    }, {
+      "id": "30d2c24e-930d-4c9d-a0ee-ffb789d8e936",
+      "comment": "",
+      "command": "type",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Kris-Thompson"
+    }, {
+      "id": "2d209bb2-e9f3-4f21-a942-c6da1d444a88",
+      "comment": "",
+      "command": "type",
+      "target": "name=modele",
+      "targets": [
+        ["name=modele", "name"],
+        ["css=.col-md-6:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='modele']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "perspiciatis"
+    }, {
+      "id": "bce92a0c-c182-4835-9b12-f95a56d84063",
+      "comment": "",
+      "command": "type",
+      "target": "name=couleur",
+      "targets": [
+        ["name=couleur", "name"],
+        ["css=.col-md-6:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='couleur']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "LightSalmon"
+    }, {
+      "id": "24375866-b6d2-4228-b5fe-7d371430bf2f",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1977"
+    }, {
+      "id": "061bf1bc-c718-4e8e-a01e-f61cc6d7302e",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "186729"
+    }, {
+      "id": "6305b312-5888-492d-b649-8b0ac1858dff",
+      "comment": "",
+      "command": "type",
+      "target": "name=carrosserie",
+      "targets": [
+        ["name=carrosserie", "name"],
+        ["css=.col-md-6:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='carrosserie']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "nesciunt"
+    }, {
+      "id": "9fc504a2-bf5c-4490-bd75-eba83b5e62d0",
+      "comment": "",
+      "command": "type",
+      "target": "name=energie",
+      "targets": [
+        ["name=energie", "name"],
+        ["css=.col-md-6:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='energie']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "Diesel"
+    }, {
+      "id": "cfb40d8f-e4b6-40a6-9883-3b2ab023b4c1",
+      "comment": "",
+      "command": "type",
+      "target": "name=boite",
+      "targets": [
+        ["name=boite", "name"],
+        ["css=.col-md-6:nth-child(9) > .form-control", "css:finder"],
+        ["xpath=//input[@name='boite']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[9]/input", "xpath:idRelative"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": "Automatique"
+    }, {
+      "id": "b358595f-a354-448e-b554-13d0ab27b612",
+      "comment": "",
+      "command": "type",
+      "target": "name=immatriculation",
+      "targets": [
+        ["name=immatriculation", "name"],
+        ["css=.col-md-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='immatriculation']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pk-3954-vo"
+    }, {
+      "id": "bfd421b3-992e-4c6c-85c0-b60057daafd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64386853-59b0-4d86-bd16-c02a1baee1a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82c8450f-59ae-41e5-a9e0-07636e79688e",
+      "comment": "",
+      "command": "click",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "873227b6-a776-4e9c-9029-0be166e12972",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2ff372c-e914-4262-ab9a-7fb0f2d086ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "327a3297-2c04-48e2-9586-b90935c960e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=marque",
+      "targets": [
+        ["name=marque", "name"],
+        ["css=.col-md-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='marque']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Monbhgu"
+    }, {
+      "id": "4f5a6873-c54a-4fc5-9d43-35dc5314a96f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row",
+      "targets": [
+        ["css=.row", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93acdcaf-95fc-444a-8678-cca3f9aa3226",
+      "comment": "",
+      "command": "click",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2d999c2-2643-4d74-981c-703abc5b18c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9039b84-0238-4d11-bfb2-75298f2ee179",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ad5fda4-0e25-4e64-9240-373ec480b75a",
+      "comment": "",
+      "command": "click",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63761736-78e1-4a79-bbd0-c26926444e50",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2010"
+    }, {
+      "id": "a7c1e39a-1d36-45c1-9669-e36294a7105b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enregistrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58ebe905-41af-468f-a4a6-243139a31801",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-warning > .bi",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-warning > .bi", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[5]/table/tbody/tr[27]/td[4]/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[27]/td[4]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d0c88ed-642e-42fc-8811-1b999c63b9e0",
+      "comment": "",
+      "command": "click",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcee33be-0452-4d9a-87ca-087c9d2f4b47",
+      "comment": "",
+      "command": "type",
+      "target": "name=annee",
+      "targets": [
+        ["name=annee", "name"],
+        ["css=.col-md-6:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='annee']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2020"
+    }, {
+      "id": "0f413689-9ad2-483b-9863-1266c6bdddc2",
+      "comment": "",
+      "command": "click",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d71e1d-65cd-4ee4-8165-476342f4b450",
+      "comment": "",
+      "command": "click",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca3fa35-9fae-42c5-b49e-1cd870162891",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1645bc1-bcf9-40d0-93a7-6d56bf668b00",
+      "comment": "",
+      "command": "click",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe096565-fe75-4a42-ad59-1ab4d56204b3",
+      "comment": "",
+      "command": "type",
+      "target": "name=kilometrage",
+      "targets": [
+        ["name=kilometrage", "name"],
+        ["css=.col-md-6:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='kilometrage']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "190000"
+    }, {
+      "id": "5d4bae67-02ec-4ef9-98e1-5f252eb9e513",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Modifier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69d9fe3-4ccf-4215-b1fe-96d859df4f9f",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2ef9f01-cfe6-4594-a18a-3a731096b37d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(27) .btn-outline-danger > .bi",
+      "targets": [
+        ["css=tr:nth-child(27) .btn-outline-danger > .bi", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[5]/table/tbody/tr[27]/td[4]/button/i", "xpath:idRelative"],
+        ["xpath=//tr[27]/td[4]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5672a8a0-ca60-4459-ad7c-51b22c438846",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Supprimer ce véhicule ?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70a91841-1d07-4619-a1e3-5769d0b72399",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "82a47fb7-d71a-4b96-a6c8-14932e3ab98c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}
