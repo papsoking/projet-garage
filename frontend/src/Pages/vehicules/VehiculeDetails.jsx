@@ -19,7 +19,7 @@ export default function VehiculeDetails() {
     useEffect(() => {
         fetch(`${import.meta.env.VITE_BACKEND_URL}/api/vehicules/${id}`)
             .then((response) => response.json())
-            .then((data) => setVehicule(data) && console.log(data))
+            .then((data) => setVehicule(data))
             .catch((error) => console.error("Erreur lors de la récupération du véhicule :", error));
     }, [id]);
 

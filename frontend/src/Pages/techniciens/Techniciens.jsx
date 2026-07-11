@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Techniciens() {
   // Données temporaires
   const [techniciens, setTechniciens] = useState([]);
   const location = useLocation();
   const message = location.state?.message;
+  const navigate = useNavigate();
 
   //   Récupération des techniciens depuis l'API
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function Techniciens() {
 
   const handleDelete = (id) => {
     if (window.confirm("Supprimer ce technicien ?")) {
-      console.log("Suppression :", id);
+      // console.log("Suppression :", id);
 
       // Appel API pour supprimer le technicien
       fetch(`${import.meta.env.VITE_BACKEND_URL}/api/techniciens/${id}`, {
@@ -34,6 +35,10 @@ export default function Techniciens() {
             setTechniciens((prevTechniciens) =>
               prevTechniciens.filter((t) => t.id !== id),
             );
+            // Afficher un message de succès
+            navigate("/techniciens", {
+              state: { message: "Technicien supprimé avec succès." },
+            });
           }
         })
         .catch((error) =>

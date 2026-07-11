@@ -180,7 +180,7 @@ export default function VehiculeForm() {
         throw new Error(data.message || "La validation a échoué.");
       }
 
-      console.log(data);
+      // console.log(data);
       navigate("/vehicules", {
         state: {
           message: id

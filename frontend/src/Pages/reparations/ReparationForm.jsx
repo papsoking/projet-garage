@@ -15,7 +15,7 @@ export default function ReparationForm() {
     objet_reparation: "",
     techniciens: [],
   });
-  console.log("formData", formData);
+  // console.log("formData", formData);
   // Convertit une date backend en valeur compatible avec <input type="date">
   const formatDateForInput = (dateString) => {
     if (!dateString) {

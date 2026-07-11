@@ -49,7 +49,7 @@ export default function VehiculeList() {
 
   const handleDelete = (id) => {
     if (window.confirm("Supprimer ce véhicule ?")) {
-      console.log("Suppression :", id);
+      // console.log("Suppression :", id);
 
       fetch(`${import.meta.env.VITE_BACKEND_URL}/api/vehicules/${id}`, {
         method: "DELETE",

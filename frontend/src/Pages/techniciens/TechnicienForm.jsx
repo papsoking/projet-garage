@@ -133,7 +133,7 @@ export default function TechnicienForm() {
         throw new Error(data.message || "La validation a échoué.");
       }
 
-      console.log("SUCCESS :", data);
+      // console.log("SUCCESS :", data);
 
       // redirection après succès
       navigate("/techniciens", {

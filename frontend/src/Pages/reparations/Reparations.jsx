@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Reparations() {
   //   Récupération des données de réparations depuis l'API
   const [reparations, setReparations] = useState([]);
   const location = useLocation();
+  const navigate = useNavigate();
   const message = location.state?.message;
 
   useEffect(() => {
@@ -30,6 +31,10 @@ export default function Reparations() {
           if (response.ok) {
             // Mettre à jour la liste des réparations
             setReparations((prev) => prev.filter((r) => r.id !== id));
+            // Afficher un message de succès
+            navigate("/reparations", {
+              state: { message: "Réparation supprimée avec succès." },
+            });
           }
         })
         .catch((error) => {
