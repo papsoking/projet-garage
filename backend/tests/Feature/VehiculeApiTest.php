@@ -3,13 +3,24 @@
 namespace Tests\Feature;
 
 use App\Models\Reparation;
+use App\Models\User;
 use App\Models\Vehicule;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class VehiculeApiTest extends TestCase
 {
     use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        // Toutes les routes véhicules exigent désormais une authentification (admin) :
+        // on simule un administrateur connecté pour chaque test.
+        Sanctum::actingAs(User::factory()->create());
+    }
 
     public function test_peut_lister_les_vehicules(): void
     {

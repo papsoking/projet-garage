@@ -1,12 +1,20 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
   const [isExpanded, setIsExpanded] = useState(false);
   const location = useLocation();
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
   const toggleNavbar = () => {
     setIsExpanded(!isExpanded);
+  };
+
+  const handleLogout = async () => {
+    await logout();
+    navigate("/login", { replace: true });
   };
 
   return (
@@ -61,6 +69,19 @@ export default function Navbar() {
                         >
                             <i className="bi bi-people me-1"></i>Techniciens
                         </Link>
+                    </li>
+                    <li className="nav-item d-flex align-items-center ms-lg-3 mt-2 mt-lg-0">
+                        <span className="text-white-50 small me-2 d-none d-lg-inline">
+                            <i className="bi bi-person-circle me-1"></i>
+                            {user?.name || "Admin"}
+                        </span>
+                        <button
+                            type="button"
+                            className="btn btn-outline-light btn-sm"
+                            onClick={handleLogout}
+                        >
+                            <i className="bi bi-box-arrow-right me-1"></i>Déconnexion
+                        </button>
                     </li>
                 </ul>
             </div>

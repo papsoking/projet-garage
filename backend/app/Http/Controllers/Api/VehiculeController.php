@@ -14,8 +14,9 @@ class VehiculeController extends Controller
 
         $vehicules = Vehicule::query()
             ->when($search, function ($query, $search) {
-                $query->where('marque', 'like', "%{$search}%")
-                    ->orWhere('immatriculation', 'like', "%{$search}%");
+                $like = '%'.strtolower($search).'%';
+                $query->whereRaw('LOWER(marque) LIKE ?', [$like])
+                    ->orWhereRaw('LOWER(immatriculation) LIKE ?', [$like]);
             })
             ->get();
 

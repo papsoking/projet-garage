@@ -4,12 +4,20 @@ namespace Tests\Feature;
 
 use App\Models\Reparation;
 use App\Models\Technicien;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class TechnicienApiTest extends TestCase
 {
     use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        Sanctum::actingAs(User::factory()->create());
+    }
 
     public function test_peut_lister_les_techniciens(): void
     {
