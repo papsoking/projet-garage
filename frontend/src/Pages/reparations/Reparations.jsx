@@ -23,7 +23,18 @@ export default function Reparations() {
 
   const handleDelete = (id) => {
     if (confirm("Supprimer cette réparation ?")) {
-      console.log("delete:", id);
+      fetch(`${import.meta.env.VITE_BACKEND_URL}/api/reparations/${id}`, {
+        method: "DELETE",
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Mettre à jour la liste des réparations
+            setReparations((prev) => prev.filter((r) => r.id !== id));
+          }
+        })
+        .catch((error) => {
+          console.error("Error deleting repair:", error);
+        });
     }
   };
 
